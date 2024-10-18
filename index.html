@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#what_you_should_already_know">What You Should Already Know</a></li>
+            <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#If-Else_Statements">If-Else Statements</a></li>
+            <li><a class="nav-link" href="#While_Loop">While Loop</a></li>
+            <li><a class="nav-link" href="#Function_Declarations">Function Declarations</a></li>
+            <li><a class="nav-link" href="#Error_Handling">Error Handling</a></li>
+            <li><a class="nav-link" href="#File_Operations">File Operations</a></li>
+            <li><a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a></li>
+            <li><a class="nav-link" href="#OOP_in_Python">OOP in Python</a></li>
+            <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header >Introduction</header>
+            <p>Python is a widely used high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, and a syntax that allows programmers to express concepts in fewer lines of code.</p>
+        </section>
+        <section class="main-section" id="what_you_should_already_know">
+            <header>What you should already know</header>
+            <p>This guide assumes you have the following basic background:</p>
+            <ul>
+                <li>A general understanding of programming concepts.</li>
+                <li>Familiarity with basic data structures like lists, dictionaries, and sets.</li>
+                <li>Some experience with object-oriented programming.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header >Hello World</header>
+            <p>Let’s start by writing a simple Python program:</p>
+            <pre><code>print("Hello, World!")</code></pre>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable.</p>
+            <p>Here are some basic rules for defining variables:</p>
+            <ul>
+                <li>A variable name must start with a letter or the underscore character.</li>
+                <li>A variable name cannot start with a number.</li>
+                <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _).</li>
+                <li>Variable names are case-sensitive (age, Age, and AGE are three different variables).</li>
+            </ul>
+                    <p>Example:</p>
+                    <pre><code>x = 5
+            y = "Hello, World!"</code></pre>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header >Data Types</header>
+            <p>In Python, variables can hold values of different types, and different operations can be performed on different types. Here are the basic data types:</p>
+            <ul>
+                <li><strong>int</strong>: Integer numbers.</li>
+                <li><strong>float</strong>: Floating point numbers.</li>
+                <li><strong>str</strong>: Strings, or text.</li>
+                <li><strong>list</strong>: A collection of ordered, changeable items.</li>
+                <li><strong>tuple</strong>: A collection of ordered, unchangeable items.</li>
+                <li><strong>dict</strong>: A collection of unordered, changeable key-value pairs.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="If-Else_Statements">
+            <header >If-Else Statements</header>
+            <p>The <code>if</code> statement is used to test a condition. If the condition is true, a block of code is executed; if false, another block (or nothing) may be executed.</p>
+                    <pre><code>if x > 0:
+                print("x is positive")
+            else:
+                print("x is not positive")</code></pre>
+        </section>
+        <section class="main-section" id="While_Loop">
+            <header >While Loop</header>
+            <p>A <code>while</code> loop allows you to execute a block of code repeatedly as long as a condition is true.</p>
+                    <pre><code>x = 0
+            while x < 5:
+                print(x)
+                x += 1</code></pre>
+        </section>
+        <section class="main-section" id="Function_Declarations">
+            <header >Function Declarations</header>
+            <p>Functions are defined using the <code>def</code> keyword. Here’s a simple function to calculate the square of a number:</p>
+                <pre><code>def square(n):
+            return n * n</code></pre>
+        </section>
+        <section class="main-section" id="Error_Handling">
+            <header >Error Handling</header>
+            <p>In Python, you can handle errors gracefully using try-except blocks. Here’s an example:</p>
+                    <pre><code>try:
+                print(10 / 0)
+            except ZeroDivisionError:
+                print("Cannot divide by zero!")</code></pre>
+        </section>
+        <section class="main-section" id="File_Operations">
+            <header >File Operations</header>
+            <p>You can open, read, write, and close files using Python’s built-in file operations:</p>
+                    <pre><code>file = open("example.txt", "r")
+            content = file.read()
+            print(content)
+            file.close()</code></pre>
+        </section>
+        <section class="main-section" id="Modules_and_Packages">
+            <header>Modules and Packages</header>
+            <p>Python allows you to create and import modules and packages. A module is a single Python file, and a package is a collection of modules.</p>
+                    <pre><code>import math
+            print(math.sqrt(16))</code></pre>
+        </section>
+        <section class="main-section" id="OOP_in_Python">
+            <header >OOP in Python</header>
+            <p>Python supports object-oriented programming (OOP) principles like classes, inheritance, and polymorphism. Here’s a simple class in Python:</p>
+                    <pre><code>class Dog:
+                def __init__(self, name):
+                    self.name = name
+
+                def bark(self):
+                    print(f"{self.name} says woof!")
+
+            dog = Dog("Buddy")
+            dog.bark()</code></pre>
+        </section>
+        <section class="main-section" id="Conclusion">
+        <header >Conclusion</header>
+        <p>Python is a versatile language with a wide range of applications, from web development to data science. This documentation is a basic introduction, but there is much more to explore. Happy coding!</p>
+        </section>
+    </main>
+</body>
+</html>
