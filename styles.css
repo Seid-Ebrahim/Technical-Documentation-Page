@@ -7,10 +7,10 @@ body {
     flex-direction: column;
 }
 nav header {
-    color:white;
+    color:#f4f4f4;
     text-align: center;
     background-color: #2C3E50;
-    padding: 15px;
+    padding: 1rem;
 }
 nav {
     background-color: #333;
@@ -38,11 +38,12 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: #f4f4f4;
     text-decoration: none;
-    padding: 10px;
+    padding: 0.625rem;
     display: block;
     border: 3px solid white;
+    letter-spacing: 0.05rem;
 }
 
 nav ul li a:hover {
@@ -51,10 +52,26 @@ nav ul li a:hover {
 
 #main-doc {
     margin: 0;
-    padding: 20px; 
+    padding: 1.25rem; 
     flex: 1;
 }
+header {
+    color: #333;
+    border: 3px solid white;
+    font-weight: bold ;
+    font-size: 1.25rem;
+}
 
+code {
+    font-family: monospace;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
 /* Sidebar for wider screens */
 @media (min-width: 768px) {
     body {
@@ -80,22 +97,13 @@ nav ul li a:hover {
         width: 100%;
     }
 }
+@media (max-width: 768px) {
+    header {
+        font-size: 1rem;
+    }
 
-header {
-    color: #333;
-    border: 3px solid white;
-    font-weight: bold ;
-    font-size: 20px;
-}
-
-code {
-    padding: 2px 5px;
-    font-family: monospace;
-}
-
-pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
 }
